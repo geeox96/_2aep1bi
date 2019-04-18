@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  *
  * @author Geovanio Carnelosso
@@ -11,10 +13,13 @@ public class App {
         Aluno aluno1 = new Aluno();
         aluno1.Aluno(17029772, "juaum");
         System.out.println(aluno1.getRA());
+        System.out.println(aluno1.getNome());
 
-        Disciplina disciplina1 = new Disciplina();
-        disciplina1.Disciplina("Matematica");
-        System.out.println(disciplina1.getNome());
+        Disciplina diciplina1 = new Disciplina();
+        diciplina1.Disciplina("Matematica");
+        System.out.println(diciplina1.getNome());
+
+
 
 
     }

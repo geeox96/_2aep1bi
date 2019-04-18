@@ -11,18 +11,20 @@ public class Avaliacao {
     private Aluno aluno;
 
     public void Avaliacao(Aluno aluno, Disciplina disciplina, float nota){
-
+        this.aluno = aluno;
+        this.disciplina = disciplina;
+        this.nota = nota;
     }
 
     public float getNota(){
         return this.nota;
     }
 
-    //public Disciplina getDisciplina(){
-    //    return "alo";
-    //}
+    public Disciplina getDisciplina(){
+        return this.disciplina;
+    }
 
-    //public Aluno getAluno(){
-    //    return;
-    //}
+    public Aluno getAluno(){
+        return this.aluno;
+    }
 }

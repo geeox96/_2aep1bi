@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  *
  * @author Geovanio Carnelosso
@@ -6,13 +8,15 @@
  */
 
 public class RepositoriosDeAvaliacoes {
-    private Avaliacao avaliacoes;
+    private ArrayList<Avaliacao> avaliacoes = new ArrayList<Avaliacao>();
 
     public void Adicionar(Avaliacao avaliacao){
-
+        this.avaliacoes.add(avaliacao);
     }
 
-    //public Aluno obterAprovados(Disciplina disciplina){
-    //    return;
+    //public Aluno[] obterAprovados(Disciplina disciplina){
+    //    for( int i = 0 ; i <= avaliacoes.size(); i++){
+    //        avaliacoes.listIterator()
+    //    }
     //}
 }
