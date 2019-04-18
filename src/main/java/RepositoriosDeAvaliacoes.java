@@ -1,3 +1,10 @@
+/**
+ *
+ * @author Geovanio Carnelosso
+ * @author Pedro Azevedo
+ *
+ */
+
 public class RepositoriosDeAvaliacoes {
     private Avaliacao avaliacoes;
 

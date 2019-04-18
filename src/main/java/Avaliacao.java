@@ -1,3 +1,10 @@
+/**
+ *
+ * @author Geovanio Carnelosso
+ * @author Pedro Azevedo
+ *
+ */
+
 public class Avaliacao {
     private float nota;
     private Disciplina disciplina;

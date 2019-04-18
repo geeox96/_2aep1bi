@@ -1,3 +1,10 @@
+/**
+ *
+ * @author Geovanio Carnelosso
+ * @author Pedro Azevedo
+ *
+ */
+
 public class Aluno {
     private String nome;
     private int ra;
