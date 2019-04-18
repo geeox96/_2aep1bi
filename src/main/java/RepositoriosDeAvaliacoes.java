@@ -14,9 +14,13 @@ public class RepositoriosDeAvaliacoes {
         this.avaliacoes.add(avaliacao);
     }
 
-    //public Aluno[] obterAprovados(Disciplina disciplina){
-    //    for( int i = 0 ; i <= avaliacoes.size(); i++){
-    //        avaliacoes.listIterator()
-    //    }
-    //}
+    public Aluno[] obterAprovados(Disciplina disciplina){
+        Aluno[] aprovados = new Aluno[10];
+
+        for( int i = 0 ; i <= avaliacoes.size(); i++){
+            avaliacoes.listIterator();
+        }
+
+        return aprovados[];
+    }
 }
