@@ -8,19 +8,26 @@ import java.util.ArrayList;
  */
 
 public class RepositoriosDeAvaliacoes {
-    private ArrayList<Avaliacao> avaliacoes = new ArrayList<Avaliacao>();
+    private ArrayList<Avaliacao> avaliacoes = new ArrayList <Avaliacao>();
 
-    public void Adicionar(Avaliacao avaliacao){
+    public void adicionar(Avaliacao avaliacao){
         this.avaliacoes.add(avaliacao);
     }
 
-    public Aluno[] obterAprovados(Disciplina disciplina){
-        Aluno[] aprovados = new Aluno[10];
+    public ArrayList obterAprovados(Disciplina disciplina){
+        int contador=0;
+        Avaliacao aux;
+        ArrayList Alunos = new ArrayList();
+        while(contador <= avaliacoes.size()){
+            aux = avaliacoes.get(contador);
+            if(aux.getDisciplina() == disciplina && aux.getNota() >= 7){
 
-        for( int i = 0 ; i <= avaliacoes.size(); i++){
-            avaliacoes.listIterator();
+                Alunos.add(aux.getAluno());
+                Alunos.add(aux.getNota());
+                contador++;
+            }
+            contador++;
         }
-
-        return aprovados[];
+        return Alunos;
     }
 }
