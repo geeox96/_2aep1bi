@@ -17,17 +17,17 @@ public class RepositoriosDeAvaliacoes {
     public ArrayList obterAprovados(Disciplina disciplina){
         int contador=0;
         Avaliacao aux;
-        ArrayList Alunos = new ArrayList();
-        while(contador <= avaliacoes.size()){
+        ArrayList Aprovados = new ArrayList();
+        while(contador < avaliacoes.size()){
             aux = avaliacoes.get(contador);
-            if(aux.getDisciplina() == disciplina && aux.getNota() >= 7){
+            if(aux.getDisciplina() == disciplina && aux.getNota() >= 6.0f){
 
-                Alunos.add(aux.getAluno());
-                Alunos.add(aux.getNota());
-                contador++;
+                Aprovados.add(aux.getAluno());
+                Aprovados.add(aux.getNota());
+
             }
             contador++;
         }
-        return Alunos;
+        return Aprovados;
     }
 }

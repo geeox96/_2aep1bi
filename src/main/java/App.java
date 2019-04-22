@@ -77,8 +77,8 @@ public class App {
         disciplina5.Disciplina("Historia");
 
         avaliacao1.Avaliacao(aluno1, disciplina1, 6.0f);
-        avaliacao2.Avaliacao(aluno8, disciplina1, 9.0f);
-        avaliacao3.Avaliacao(aluno6, disciplina1, 7.0f);
+        avaliacao2.Avaliacao(aluno8, disciplina1, 9.5f);
+        avaliacao3.Avaliacao(aluno6, disciplina1, 7.5f);
         avaliacao4.Avaliacao(aluno3, disciplina1, 2.5f);
         avaliacao5.Avaliacao(aluno9, disciplina1, 10.0f);
         avaliacao6.Avaliacao(aluno0, disciplina2, 5.0f);
@@ -129,10 +129,7 @@ public class App {
         repositorioAvalicacoes.adicionar(avaliacao24);
         repositorioAvalicacoes.adicionar(avaliacao25);
 
-        repositorioAvalicacoes.obterAprovados(disciplina1);
-
-
-
+        System.out.println(repositorioAvalicacoes.obterAprovados(disciplina3));
 
     }
 }
