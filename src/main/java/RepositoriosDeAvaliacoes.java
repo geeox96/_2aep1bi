@@ -22,7 +22,7 @@ public class RepositoriosDeAvaliacoes {
             aux = avaliacoes.get(contador);
             if(aux.getDisciplina() == disciplina && aux.getNota() >= 6.0f){
 
-                Aprovados.add(aux.getAluno());
+                Aprovados.add(aux.getAluno().getNome());
                 Aprovados.add(aux.getNota());
 
             }

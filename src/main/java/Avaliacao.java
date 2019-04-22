@@ -10,7 +10,7 @@ public class Avaliacao {
     private Disciplina disciplina;
     private Aluno aluno;
 
-    public void Avaliacao(Aluno aluno, Disciplina disciplina, float nota){
+    public Avaliacao(Aluno aluno, Disciplina disciplina, float nota){
         if(nota<0 || nota>10){
             throw new RuntimeException("so eh permitido notas de 0 a 10");
         }else{
