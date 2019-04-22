@@ -11,9 +11,14 @@ public class Avaliacao {
     private Aluno aluno;
 
     public void Avaliacao(Aluno aluno, Disciplina disciplina, float nota){
+        if(nota<0 || nota>10){
+            throw new RuntimeException("so eh permitido notas de 0 a 10");
+        }else{
+            this.nota = nota;
+        }
         this.aluno = aluno;
         this.disciplina = disciplina;
-        this.nota = nota;
+
     }
 
     public float getNota(){
